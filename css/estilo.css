@@ -1,0 +1,258 @@
+body {
+	font-family: 'Anek Telugu', sans-serif;
+}
+
+.container-fluid {
+	background-color: #f5f5f5;
+	height: 100vh;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.c-loader {
+	animation: is-rotating 1s infinite;
+	border: 6px solid #e5e5e5;
+	border-top-color: #51d4db;
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: none;
+}
+@keyframes is-rotating {
+	to {
+		transform: rotate(1turn);
+	}
+}
+
+.formularios {
+	margin-top: 120px;
+}
+
+.forms {
+	margin-top: 120px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 25px 30px;
+}
+
+button {
+	background-color: gray;
+	border-radius: 50px !important;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-weight: 500;
+	padding: 6px 17px 8px;
+	margin: 0px 5px !important;
+}
+.bred {
+	background-color: #dd0000;
+}
+
+.bblue {
+	background-color: #3a76d1;
+}
+
+.bgreen {
+	background-color: #14c522;
+}
+.bgray {
+	background-color: #747474;
+}
+.inputs {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.buttons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#btn_update, #btn_update_cancel{
+	display: none;
+}
+form input, form select {
+	width: 100%;
+	padding: 8px 15px;
+	border: none;
+	background-color: rgb(241, 241, 241);
+	border-radius: 5px;
+	margin-bottom: 7px;
+}
+
+form input:focus, form select:focus {
+	outline-color: #00afdb;
+}
+#atualiza_produto,
+#atualiza_cor {
+	display: none;
+}
+#mensagem {
+	width: 300px;
+	background-color: #d4a600;
+	padding: 12px 15px 12px 25px;
+	border-radius: 5px;
+	position: fixed;
+	bottom: 5vh;
+	left: 20px;
+	border-left: 6px solid #ffc906;
+	color: #fff;
+	font-weight: 400;
+	display: none;
+	font-size: .9em;
+	z-index: 25;
+}
+#mensagem.red {
+	background-color: red;
+	border-left: 6px solid #ae0000;
+}
+#mensagem.green {
+	background-color: rgb(0, 185, 52);
+	border-left: 6px solid #009635;
+}
+#msgdelete {
+	position: fixed;
+	top: 80px;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	padding: 20px;
+	z-index: 11;
+	background-color: #ae0000;
+	border: 3px solid #ff1111;
+	color: #fff;
+	border-radius: 20px;
+	text-align: center;
+	display: none;
+	z-index: 25;
+}
+.buttons-delete{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#modalpagar {
+	position: fixed;
+	top: 80px;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	padding: 20px;
+	z-index: 11;
+	background-color: #009650;
+	border: 3px solid #00ae5d;
+	color: #fff;
+	border-radius: 20px;
+	text-align: center;
+	display: none;
+	z-index: 25;
+}
+.buttons-pagar{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.block{
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+}
+button.btn {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	padding: 5px 5px;
+	border: none;
+	color: #fff;
+}
+button.btn:hover {
+	color: #fff;
+}
+button.edit{
+	background-color: #0080ea;
+}
+button.edit:hover{
+	background-color: #32a3ff;
+}
+button.pagar{
+	width: 50px;
+	padding-top: 0;
+	background-color: #14c50e;
+}
+.btn_buscar{
+	height: 40px;
+}
+button.pagar:hover{
+	background-color: #1bdb14;
+}
+button.delete{
+	background-color: #d00101;
+}
+button.delete:hover{
+	background-color: #ff2c2c;
+}
+:disabled{
+	background-color: #c7c7c7;
+}
+.filtros{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.barrafiltro{
+	width: 100%;
+	height: 1px;
+	display: block;
+	background-color: #c7c7c7;
+}
+.titulo_filtros{
+	margin-top: -14px;
+	text-align: center;
+}
+.titulo_filtros p{
+	background-color: #FFF;
+	width: 100px;
+	line-height: 1em;
+}
+#filtro_preco{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+}
+.limpar_filtro{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+#table_delete{
+	display: none;
+}
+
+
+
+
+
+@media (max-width: 575.98px) {}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+@media (min-width: 1200px) {}
